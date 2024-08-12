@@ -90,11 +90,15 @@ function App() {
 
   return (
     <div className="bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat 
-      bg-contain bg-gray-300 min-h-screen dark:bg-[url('./assets/images/bg-mobile-dark.jpg')] dark:bg-gray-900 ">
+      bg-contain bg-gray-300 min-h-screen dark:bg-[url('./assets/images/bg-mobile-dark.jpg')] dark:bg-gray-900 
+      md:bg-[url('./assets/images/bg-desktop-light.jpg')]
+      md:dark:bg-[url('./assets/images/bg-desktop-dark.jpg')]
+      ">
 
       <Header />
 
-      <main className="container mx-auto px-4 mt-8">
+      <main className="container mx-auto px-4 mt-8 
+                       md:max-w-xl">
 
         <FormularioTodo createTodo={createTodo}/>
 
